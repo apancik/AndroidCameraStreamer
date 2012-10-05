@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Network Preferences" >
+        <EditTextPreference
+            android:name="Host"
+            android:defaultValue="192.168.1.80"
+            android:key="host"
+            android:summary="This is host"
+            android:title="Enter the host address" />
+        <EditTextPreference
+            android:name="Port Number"
+            android:defaultValue="1313"
+            android:inputType="number"
+            android:key="portnumber"
+            android:numeric="integer"
+            android:summary="This is port number of host"
+            android:title="Enter the Port Number" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Processing Preferences" >
+        <EditTextPreference
+            android:name="Jpeg Compression"
+            android:defaultValue="90"
+            android:key="jpeg"
+            android:numeric="integer"
+            android:summary="This is compression level of jpeg"
+            android:title="Enter the Compression Level" />
+        <EditTextPreference
+            android:name="Buffer Size"
+            android:defaultValue="10"
+            android:key="buffer"
+            android:numeric="integer"
+            android:summary="This is the number of available frames in frame buffer"
+            android:title="Enter the size of frame buffer" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Grabbing Preferences" >
+        <EditTextPreference
+            android:name="Width"
+            android:defaultValue="640"
+            android:key="width"
+            android:numeric="integer"
+            android:summary="Width"
+            android:title="Enter the width" />
+        <EditTextPreference
+            android:name="Height"
+            android:defaultValue="480"
+            android:key="height"
+            android:numeric="integer"
+            android:summary="Height"
+            android:title="Enter the height" />
+        <EditTextPreference
+            android:name="Camera Id"
+            android:defaultValue="0"
+            android:key="camid"
+            android:numeric="integer"
+            android:summary="This is the offset for camera id"
+            android:title="Enter the camera id" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

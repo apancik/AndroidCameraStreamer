@@ -1,0 +1,22 @@
+package camerastreamer;
+
+option java_package = "uk.ac.ox.cs.camerastreamer.packet";
+option java_outer_classname = "DataPacket";
+
+message Header {
+	optional int64 timestamp = 1;
+	
+	optional float acc0 = 2;
+	optional float acc1 = 3;
+	optional float acc2 = 4;
+	
+	optional double longitude = 5;
+	optional double latitude = 6;
+	
+	repeated PointData feature = 7;
+}
+
+message PointData {
+	required double x = 8;
+	required double y = 9;
+}
