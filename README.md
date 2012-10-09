@@ -1,6 +1,8 @@
-Lightweight Robot Vision Architecture
-=====================================
+Android Camera Streamer
+=======================
 Copyright 2011-2012 Andrej Pancik
+
+Android Camera Streamer is a project implementing data streaming (video, gyro, etc.) and processing from Android Phone and computer.
 
 Contents
 ========
